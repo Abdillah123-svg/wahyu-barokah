@@ -1,54 +1,298 @@
-<header>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wahyu Barokah</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background-color: #ffffff;
+    }
 
-# GitHub Pages
+    header {
+      background-color: transparent;
+      color: white;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+    header.scrolled {
+      background-color: #00002b;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
 
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    .hero {
+      background-color: #00002b;
+      color: white;
+      padding: 160px 20px 60px;
+      text-align: center;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      position: relative;
+      z-index: 1;
+      margin-top: -80px;
+    }
+
+    .hero img.hero-image {
+      width: 160px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.65);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      font-weight: 600;
+    }
+
+    .hero h1 .highlight {
+      background: yellow;
+      color: black;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+      margin-top: 0.5rem;
+    }
+
+    .highlight {
+      background-color: #FFD700;
+      color: #000;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .h2 {
+      color: #00002b;
+      margin-bottom: 16px;
+      font-size: 1.5em;
+    }
+
+    .section p1:hover {
+      margin-bottom: 50px;
+      background-color: #00002b;
+      color: white;
+      transition: background-color 0.3s ease;
+      padding:0px;
+      border-radius: 0px;
+    }
+
+    .section.contactaa p:hover {
+      transition: background-color 0.3s ease;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .section.contacta {
+      background-color: #00002b;
+      color: #ffffff;
+      padding: 30px 20px;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .section.contacta:hover {
+      background-color: #000040;
+      color: #ffffff;
+    }
+
+    .ul {
+      padding-left: 20px;
+    }
+
+    .img-section {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .img-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      background-color: #f0f0f0;
+      padding: 30px 20px;
+      border-left: 5px solid #00002b;
+    }
+
+    .site-footer {
+      background-color: #00002b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .site-footer img {
+      height: 24px;
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+
+    .custom-header .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+    }
+
+    .custom-header {
+      background-color: #030233;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      margin-left: 1px; /* atau padding-left: 1px; */
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    .custom-header .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .custom-header .main-nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      transition: 0.3s;
+    }
+
+    .custom-header .main-nav a:hover {
+      background-color: #ffdd00;
+      color: black;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+    }
+
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="navbar" class="custom-header">
+  <div class="container">
+    <div class="logo">Wahyu Barokah</div>
+    <nav class="main-nav">
+      <a href="">Beranda</a>
+      <a href="">Artikel</a>
+      <a href="">Produk & Layanan</a>
+    </nav>
+  </div>
 </header>
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+<div class="hero">
+  <img src="" alt="Ilustrasi Hero" class="hero-image">
+  <h1><span class="soft-text">Selamat Datang di</span> <span class="highlight">Wahyu Barokah</span></h1>
+  <p>UMKM makanan dan minuman sehat, siap menerima pesanan anda</p>
+</div>
 
-## Step 1: Enable GitHub Pages
+<div class="container">
+  <div class="section">
+    <h2>Tentang Kami</h2>
+    <p1>Kami adalah UMKM yang menyediakan aneka jajanan ringan dan minuman buatan sendiri. kami juga siap melayani pemesanan aneka masakan sesuai kebutuhan anda</p1>
+  </div>
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+  <div class="container">
+   <div class="section">
+        <h2>Visi & Misi</h2>
+        <p><strong>Visi:</strong> Penyedia Jajanan dan minuman rumahan yang lezat di konsumsi ketika lapar</p>
+        <p><strong>Misi:</strong> Memberikan rasa terbaik di setiap olahan kami</p>
+  </div>
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+  <div class="section">
+    <h2>Produk Unggulan</h2>
+    <ul>
+      <li><strong>Es Timun Serut</strong>:<p>.</p></li>
+    </ul>
+  </div>
+  
+  <div class="section contact">
+    <h2>Informasi Kontak</h2>
+    <p><strong>Alamat:</strong><br>
+     Panjang Jiwo SDI gang Tembusan No.5 RT 004  RW 002 Surabaya.</p>
+    <p><strong>Email:</strong> </p>
+  </div>  
+</div>
 
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+   
+</body>
+</html>
