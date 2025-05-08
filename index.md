@@ -282,39 +282,14 @@
     <h2>Produk Unggulan</h2>
     <ul>
       <li><strong>Es Timun Serut</strong>:<p>.</p></li>
-      <li><strong>FB Marketplace & Group Underground Bot</strong>: Alat otomatisasi posting Facebook Marketplace & grup.</li>
-      <li><strong>ATIKBOT</strong>: Robot afiliasi & pemasaran TikTok otomatis.</li>
-      <li><strong>iReels Bot</strong>: Otomatisasi posting Reels di media sosial.</li>
     </ul>
   </div>
 
-  <div class="section">
-    <p>Bisa klik di sini untuk semua produk kami: <a href="https://markasbot.id/tool/">Produk & Layanan</a>.</p>
-  </div>
-
-  <div class="section">
-    <h2>Layanan Tambahan</h2>
-    <ul>
-      <li><strong>Pembuatan Website</strong>: Situs profesional untuk bisnis Anda.</li>
-      <li><strong>Kelas & Workshop</strong>: Pelatihan seperti "Kelas Bypass FB Marketplace".</li>
-    </ul>
-  </div>
-
-  <div class="section contacta">
-    <p>
-      Kami memahami bahwa setiap bisnis memiliki kebutuhan yang berbeda-beda, oleh karena itu kami menyediakan berbagai pilihan tools yang dapat disesuaikan dengan kebutuhan bisnis Anda. Kami juga memberikan layanan konsultasi dan dukungan teknis yang terbaik bagi pelanggan kami.
-    </p>
-    <p>
-      Dengan pengalaman membantu lebih dari <strong>7.000 UMKM</strong>, MarkasBot berkomitmen mendukung pertumbuhan bisnis Anda melalui solusi digital inovatif dan efektif. Salam, Tim MarkasBot
-    </p>
-  </div>
-
-  <div class="section contact">
+<div class="section contact">
     <h2>Informasi Kontak</h2>
     <p><strong>Alamat:</strong><br>
-      Jl. Raya Kendal Patalan, Dusun Bandem RT 05 RW 03, Desa Kendal, Kec. Kendal, Ngawi, Jawa Timur.</p>
-    <p><strong>Email:</strong> markasbotid@gmail.com</p>
-    <p><strong>Jam Operasional:</strong> Senin - Sabtu, 09.00 - 16.30 WIB</p>
+     Panjang Jiwo SDI gang Tembusan No. 5 RT 004 RW 002 Surabaya.</p>
+    <p><strong>WhatsApp:08128793585</strong></p>
   </div>
 
 </div>
@@ -322,8 +297,8 @@
     <footer class="site-footer">
       <p>
         &copy;
-        <img src="https://markasbot.com/wp-content/uploads/2023/01/PraktisLaris.Com-1.png" alt="Logo MarkasBot">
-        markasbot.id 2025
+        <img src="" alt="Logo MarkasBot">
+        abhia 2025
       </p>
     </footer>
 
